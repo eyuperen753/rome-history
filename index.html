@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rome</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        .jumbotron {
+            
+            /* Görselin üstüne %55 koyulukta siyah filtre atar */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(resim/5.jpg);
+            background-size: cover;
+            background-position: 50% 35%;
+        }
+
+        .yazi-golge {
+            /* Yatay Kayma | Dikey Kayma | Bulanıklık | Gölge Rengi */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+        }
+
+        .card-img-top {
+            height: 160px;       /* Tüm resimlerin boyunu 180px'e sabitler */
+            object-fit: cover;   /* Resmi sündürüp ezmeden kutuya sığacak şekilde kırpar */
+        }
+
+        /* Kaydırma çubuğu olan kapsayıcıya vereceğimiz özel sınıf */
+        .ince-scroll::-webkit-scrollbar {
+            height: 6px; /* Yatay çubuğun kalınlığı (6px çok zarif durur, istersen 4px veya 8px yapabilirsin) */
+        }
+
+        /* Çubuğun arkasındaki ray (yol) */
+        .ince-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Açık gri arka plan */
+            border-radius: 10px;
+        }
+
+        /* Hareket eden tutamaç (çubuğun kendisi) */
+        .ince-scroll::-webkit-scrollbar-thumb {
+            background: #888; /* Koyu gri tutamaç */
+            border-radius: 10px; /* Köşeleri yuvarlatır */
+        }
+
+        /* Fareyle tutamacın üzerine gelince rengi koyulaşsın */
+        .ince-scroll::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    
+<div class="jumbotron"> 
+    <div> <!--container = w-75 mx-auto -->
+        <h1 class="text-danger">The Rise and Fall of Rome</h1>
+        <h5 class="text-light">Kingdom (753 BC), the Republic (509 BC), and the Empire (27 BC) </h5>
+        <p class="lead text-white">Witness the epic history of the Roman Kingdom, Republic, and Empire across centuries</p>
+        
+        
+        <a href="" class="btn btn-danger btn-lg">
+            Discover Eras
+        </a>
+    </div>
+</div>
+
+<div class="container-fluid my-4 ince-scroll" style="overflow-x: auto;">
+    <div class ="d-flex flex-nowrap">
+
+        <div class="card mr-3" style="min-width: 280px;">
+            <img src="resim/9.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title">The Roman Kingdom</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="resim\9.jpg" class="card-link">View Map</a>
+            </div>  
+        </div>
+
+        <div class="card mr-3" style="min-width: 280px;">
+            <img src="resim/10.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title">The Roman Republic</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="resim\10.jpg" class="card-link">View Map</a>
+            </div>  
+        </div>
+
+        <div class="card mr-3" style="min-width: 280px;">
+            <img src="resim/11.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title">The Roman Republic</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="resim/11.jpg" class="card-link">View Map</a>
+            </div>  
+        </div>
+
+        <div class="card mr-3" style="min-width: 280px;">
+            <img src="resim/7.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title">The Roman Empire</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="resim/7.jpg" class="card-link">View Map</a>
+            </div>  
+        </div>
+
+        <div class="card mr-3" style="min-width: 280px;">
+            <img src="resim/6.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title">The Roman Empire</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="resim/6.jpg" class="card-link">View Map</a>
+            </div>  
+        </div>
+
+        <div class="card mr-3" style="min-width: 280px;">
+            <img src="resim/1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title">The Roman Empire under the Tetrarchy</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="resim/1.jpg" class="card-link">View Map</a>
+            </div>  
+        </div>
+
+        <div class="card mr-3" style="min-width: 280px;">
+            <img src="resim/8.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title">The Roman Empire: Ravenna & Constantinople </h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="resim/8.jpg" class="card-link">View Map</a>
+            </div>  
+        </div>
+
+        <div class="card mr-3" style="min-width: 280px;">
+            <img src="resim/4.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title"> Fall of the Western Roman Empire</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="resim/4.jpg" class="card-link">View Map</a>
+            </div>  
+        </div>
+
+        <div class="card mr-3" style="min-width: 280px;">
+            <img src="resim/2.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title">The Eastern Roman Empire</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="resim/2.jpg" class="card-link">View Map</a>
+            </div>  
+        </div>
+
+        <div class="card mr-3" style="min-width: 280px;">
+            <img src="resim/3.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title">The Roman Empire: Nicaea & Trebizond</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="resim/3.jpg" class="card-link">View Map</a>
+            </div>  
+        </div>
+
+    </div>
+</div>
+
+
+<footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- 1. Sütun: Proje Hakkında -->
+            <div class="col-md-5 mb-3">
+                <h5 class="text-danger">The Rise and Fall of Rome</h5>
+                <p class="text-muted small">
+                    An interactive cartographic chronicle tracing the territorial evolution of Rome from a small Latin kingdom on the Tiber to a Mediterranean superpower.
+                </p>
+            </div>
+
+            <!-- 2. Sütun: Hızlı Linkler -->
+            <div class="col-md-4 mb-3">
+                <h5>Historical Eras</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light small">Roman Kingdom (753 BC)</a></li>
+                    <li><a href="#" class="text-light small">Roman Republic (509 BC)</a></li>
+                    <li><a href="#" class="text-light small">Roman Empire (27 BC)</a></li>
+                    <li><a href="#" class="text-light small">Eastern & Western Division</a></li>
+                </ul>
+            </div>
+
+            <!-- 3. Sütun: İletişim / Sosyal -->
+            <div class="col-md-3 mb-3">
+                <h5>Resources</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light small">Interactive Maps</a></li>
+                    <li><a href="#" class="text-light small">Timeline</a></li>
+                    <li><a href="#" class="text-light small">References</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="bg-secondary">
+
+        <!-- En Alt Telif Satırı -->
+        <div class="text-center text-muted small">
+            &copy; 2026 Rome History Project. Designed with Bootstrap.
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
